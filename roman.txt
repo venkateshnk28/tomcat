@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('GitPull') {
+            steps {
+                   git 'https://github.com/venkateshnk28/tomcat.git'
+            }
+        }
+    }
+}
